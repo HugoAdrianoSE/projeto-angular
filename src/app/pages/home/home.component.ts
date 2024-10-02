@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { RouterLink, RouterModule } from '@angular/router';
 import { MenuComponent } from '../../components/menu/menu.component';
 
 @Component({
@@ -8,10 +9,16 @@ import { MenuComponent } from '../../components/menu/menu.component';
   styleUrl: './home.component.scss',
 
   imports: [
+    RouterLink,
+    RouterModule,
     MenuComponent,
   ],
 })
 
-export class HomeComponent {
+export class HomeComponent implements OnInit {
+  constructor() { }
 
+  public async ngOnInit() {
+
+  }
 }
