@@ -1,0 +1,34 @@
+.fixed-top {
+  border-bottom: 2px solid #414141;
+
+  .container {
+    .fluid {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      margin: 12px 0;
+
+      .logo {
+        width: 12%;
+      }
+
+      .menu {
+        a {
+          cursor: pointer;
+          font-size: 14px;
+          margin-right: 15px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          &:hover {
+            color: #f037b0;
+            transition: 0.5s ease;
+          }
+        }
+      }
+    }
+  }
+}
+
