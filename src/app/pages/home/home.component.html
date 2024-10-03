@@ -1,15 +1,86 @@
 <app-menu></app-menu>
 
-<section>
-  <div class="container">
-    <div class="banner">
-      <div class="text">
-        <h1>Framework Angular</h1>
-        <h2>Quando devemos utilizar?</h2>
-        <p>Quer saber quando utilizar o framework Angular? Neste site, abordaremos os principais pontos sobre quando e por que usar o Angular, além de apresentar algumas empresas que implementam este poderoso framework em seus negócios.</p>
-      </div>
-
-      <img class="logo" src="../../../assets/img/angular-icon.png">
+<div class="container">
+  <section class="content banner">
+    <div class="text">
+      <h1>Framework Angular</h1>
+      <span class="subtitle">Quando devemos utilizar?</span>
+      <p>Saiba quando e por que usar o Angular. Neste site, exploraremos seus principais benefícios, empresas que o utilizam, e comparações com outros frameworks como React e Vue, para ajudá-lo a escolher o melhor para o seu projeto.</p>
     </div>
-  </div>
-</section>
+
+    <img class="logo" src="../../../assets/img/angular-icon.png">
+  </section>
+
+  <section class="content angular">
+    <div>
+      <h2>O que é o Angular?</h2>
+
+      <c-carousel>
+        <c-carousel-indicators></c-carousel-indicators>
+        <c-carousel-inner>
+          <c-carousel-item *ngFor="let slide of slides" [active]="slide.active">
+            <img
+              alt="{{ slide.title }}"
+              class="d-block w-100"
+              src="{{ slide.src }}"
+            />
+            <c-carousel-caption class="d-md-block">
+              <h3>{{ slide.title }}</h3>
+              <p>{{ slide.subtitle }}</p>
+            </c-carousel-caption>
+          </c-carousel-item>
+        </c-carousel-inner>
+        <c-carousel-control direction="prev"></c-carousel-control>
+        <c-carousel-control direction="next"></c-carousel-control>
+      </c-carousel>
+
+      <p>O Angular é um framework de código aberto para o desenvolvimento de aplicações web, criado e mantido pelo Google. Lançado oficialmente em 2016, o Angular surgiu como uma evolução do AngularJS, que foi introduzido em 2010. Diferente de seu antecessor, o Angular foi completamente reescrito, utilizando TypeScript como linguagem principal, o que trouxe melhorias significativas em termos de desempenho, modularidade e facilidade de manutenção.</p>
+
+      <p>O objetivo do Angular é facilitar o desenvolvimento de aplicações dinâmicas, especialmente aquelas conhecidas como Single Page Applications (SPAs), onde o conteúdo é carregado de forma rápida e fluida, sem a necessidade de recarregar a página inteira. Com sua arquitetura baseada em componentes e ferramentas integradas, o Angular oferece uma estrutura robusta para criar interfaces de usuário modernas, interativas e altamente escaláveis.</p>
+
+      <p>Além disso, o Angular conta com um ecossistema completo, incluindo ferramentas para testes, roteamento, injeção de dependências e muito mais. Sua popularidade se deve não só ao suporte contínuo do Google, mas também à sua grande comunidade de desenvolvedores que contribuem para a evolução constante do framework.</p>
+
+      <p>Hoje, o Angular é amplamente utilizado por grandes empresas ao redor do mundo, especialmente em projetos que exigem escalabilidade, manutenção a longo prazo e uma experiência de usuário rica e responsiva.</p>
+    </div>
+  </section>
+
+  <section class="caracteristicas">
+    <div>
+      <h2>Principais caracteristicas</h2>
+
+      <div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="caracteristicas">
+    <div>
+      <h2>Quando utilizar?</h2>
+
+      <div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="caracteristicas">
+    <div>
+      <h2>Empresas que utilizam</h2>
+
+      <div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="caracteristicas">
+    <div>
+      <h2>Diferenças do Angular para o React e o VueJS</h2>
+
+      <div>
+
+      </div>
+    </div>
+  </section>
+</div>

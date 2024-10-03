@@ -29,6 +29,7 @@
               "src/favicon.ico"
             ],
             "styles": [
+              "node_modules/@coreui/coreui/dist/css/coreui.min.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -89,6 +90,7 @@
               "src/favicon.ico"
             ],
             "styles": [
+              "node_modules/@coreui/coreui/dist/css/coreui.min.css",
               "src/styles.scss"
             ],
             "scripts": []
