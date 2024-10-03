@@ -20,26 +20,6 @@ import { CommonModule } from '@angular/common';
 })
 
 export class HomeComponent implements OnInit {
-  public slides = [
-    {
-      title: 'Primeiro Slide',
-      subtitle: 'Este é o texto do primeiro slide',
-      src: '../../../assets/img/angular-banner1.webp',
-      active: true
-    },
-    {
-      title: 'Segundo Slide',
-      subtitle: 'Este é o texto do segundo slide',
-      src: '../../../assets/img/angular-banner2.webp',
-      active: false
-    },
-    {
-      title: 'Terceiro Slide',
-      subtitle: 'Este é o texto do terceiro slide',
-      src: '../../../assets/img/angular-banner3.webp',
-      active: false
-    }
-  ];
 
   constructor() { }
 

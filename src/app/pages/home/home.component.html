@@ -15,25 +15,6 @@
     <div>
       <h2>O que é o Angular?</h2>
 
-      <c-carousel>
-        <c-carousel-indicators></c-carousel-indicators>
-        <c-carousel-inner>
-          <c-carousel-item *ngFor="let slide of slides" [active]="slide.active">
-            <img
-              alt="{{ slide.title }}"
-              class="d-block w-100"
-              src="{{ slide.src }}"
-            />
-            <c-carousel-caption class="d-md-block">
-              <h3>{{ slide.title }}</h3>
-              <p>{{ slide.subtitle }}</p>
-            </c-carousel-caption>
-          </c-carousel-item>
-        </c-carousel-inner>
-        <c-carousel-control direction="prev"></c-carousel-control>
-        <c-carousel-control direction="next"></c-carousel-control>
-      </c-carousel>
-
       <p>O Angular é um framework de código aberto para o desenvolvimento de aplicações web, criado e mantido pelo Google. Lançado oficialmente em 2016, o Angular surgiu como uma evolução do AngularJS, que foi introduzido em 2010. Diferente de seu antecessor, o Angular foi completamente reescrito, utilizando TypeScript como linguagem principal, o que trouxe melhorias significativas em termos de desempenho, modularidade e facilidade de manutenção.</p>
 
       <p>O objetivo do Angular é facilitar o desenvolvimento de aplicações dinâmicas, especialmente aquelas conhecidas como Single Page Applications (SPAs), onde o conteúdo é carregado de forma rápida e fluida, sem a necessidade de recarregar a página inteira. Com sua arquitetura baseada em componentes e ferramentas integradas, o Angular oferece uma estrutura robusta para criar interfaces de usuário modernas, interativas e altamente escaláveis.</p>
