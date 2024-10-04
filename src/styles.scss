@@ -9,6 +9,7 @@ body {
 .container {
   max-width: 1240px;
   margin: 70px auto 0;
+  padding: 0;
 
   .conteudo {
     margin-bottom: 45px;
@@ -17,6 +18,17 @@ body {
 
 h1,h2,h3,h4,h5 {
   margin: 0;
+}
+
+h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
 }
 
 p {

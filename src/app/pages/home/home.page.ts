@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { RouterLink, RouterModule } from '@angular/router';
 import { MenuComponent } from '../../components/menu/menu.component';
 import { CommonModule } from '@angular/common';
@@ -17,6 +17,10 @@ import { CardComponent } from '../../components/card/card.component';
     RouterLink,
     RouterModule,
   ],
+
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ]
 })
 
 export class HomePage implements OnInit {

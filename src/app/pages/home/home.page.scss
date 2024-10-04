@@ -12,6 +12,7 @@
 
       h1 {
         font-size: 50px;
+        font-weight: 600;
         margin: 0;
       }
 
@@ -23,6 +24,35 @@
 
     .logo {
       width: 30%;
+    }
+  }
+
+  .sobre {
+    .info {
+      display: flex;
+      justify-content: space-between;
+
+      .icones {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 46%;
+
+        .item {
+          border: 1px solid #414141;
+          border-radius: 20px;
+          padding: 25px;
+
+          .icone {
+            height: 45px;
+            width: 45px;
+          }
+        }
+      }
+
+      .textos {
+        width: 46%;
+      }
     }
   }
 }
