@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { RouterLink, RouterModule } from '@angular/router';
 import { MenuComponent } from '../../components/menu/menu.component';
-import { CarouselModule } from '@coreui/angular';
 import { CommonModule } from '@angular/common';
+import Swiper from 'swiper';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +11,6 @@ import { CommonModule } from '@angular/common';
   styleUrl: './home.component.scss',
 
   imports: [
-    CarouselModule,
     CommonModule,
     MenuComponent,
     RouterLink,
@@ -19,9 +18,16 @@ import { CommonModule } from '@angular/common';
   ],
 })
 
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, AfterViewInit {
+  constructor() {}
 
-  constructor() { }
+  ngAfterViewInit() {
+    const swiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      spaceBetween: 15,
+      loop: true,
+    });
+  }
 
   public async ngOnInit() {
 

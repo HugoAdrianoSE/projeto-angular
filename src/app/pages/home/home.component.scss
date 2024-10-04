@@ -1,11 +1,13 @@
 .container {
+  overflow: hidden;
+
   .banner {
     align-items: center;
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
 
-    .text {
+    .texto {
       width: 50%;
 
       h1 {
@@ -13,7 +15,7 @@
         margin: 0;
       }
 
-      .subtitle {
+      .subtitulo {
         color: #f037b0;
         font-size: 35px;
       }
@@ -21,6 +23,25 @@
 
     .logo {
       width: 30%;
+    }
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 300px;
+
+    .swiper-wrapper {
+      .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        width: 500px;
+
+        img {
+          width: 200px;
+        }
+      }
     }
   }
 }
