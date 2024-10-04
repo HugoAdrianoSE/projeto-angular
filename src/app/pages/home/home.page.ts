@@ -7,8 +7,8 @@ import Swiper from 'swiper';
 @Component({
   selector: 'app-home',
   standalone: true,
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss',
+  templateUrl: './home.page.html',
+  styleUrl: './home.page.scss',
 
   imports: [
     CommonModule,
@@ -18,7 +18,7 @@ import Swiper from 'swiper';
   ],
 })
 
-export class HomeComponent implements OnInit, AfterViewInit {
+export class HomePage implements OnInit, AfterViewInit {
   constructor() {}
 
   ngAfterViewInit() {
