@@ -13,72 +13,19 @@
 
   <section class="conteudo sobre">
     <div>
-      <h2>Informações sobre o Angular</h2>
+      <h2>Informações sobre o <span>Angular</span></h2>
 
       <div class="info">
         <div class="icones">
-          <div class="item">
-            <i class="icone fab fa-google"></i>
-          </div>
-
-          <div class="item">
-            <i class="icone fas fa-tools"></i>
-          </div>
-
-          <div class="item">
-            <i class="icone fas fa-layer-group"></i>
-          </div>
-
-          <div class="item">
-            <i class="icone fas fa-cube"></i>
-          </div>
-
-          <div class="item">
-            <i class="icone fas fa-code-branch"></i>
-          </div>
-
-          <div class="item">
-            <i class="icone fas fa-globe"></i>
-          </div>
-
-          <div class="item">
-            <i class="icone fas fa-code"></i>
-          </div>
-
-          <div class="item">
-            <i class="icone far fa-thumbs-up"></i>
-          </div>
-
-          <div class="item">
-            <i class="icone fas fa-users"></i>
-          </div>
-
-          <div class="item">
-            <i class="icone fas fa-hammer"></i>
-          </div>
-
-          <div class="item">
-            <i class="icone fas fa-sync-alt"></i>
-          </div>
-
-          <div class="item">
-            <i class="icone far fa-clipboard"></i>
-          </div>
-
-          <div class="item">
-            <i class="icone fas fa-briefcase"></i>
-          </div>
-
-          <div class="item">
-            <i class="icone fas fa-th"></i>
+          <div class="item" *ngFor="let item of itens" (mouseover)="atualizarTexto(item)">
+            <i class="icone" [ngClass]="item.icone"></i>
           </div>
         </div>
 
         <div class="textos">
           <div class="item">
-            <h3>O que é o Angular?</h3>
-
-            <p>O Angular é um framework de código aberto para o desenvolvimento de aplicações web, criado e mantido pelo Google. Lançado oficialmente em 2016, o Angular surgiu como uma evolução do AngularJS, que foi introduzido em 2010. Diferente de seu antecessor, o Angular foi completamente reescrito, utilizando TypeScript como linguagem principal, o que trouxe melhorias significativas em termos de desempenho, modularidade e facilidade de manutenção.</p>
+            <h3>{{tituloAtual}}</h3>
+            <p>{{textoAtual}}</p>
           </div>
         </div>
       </div>
