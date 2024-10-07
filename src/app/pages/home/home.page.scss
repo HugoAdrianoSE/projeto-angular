@@ -41,10 +41,14 @@
         .item {
           border: 1px solid #414141;
           border-radius: 20px;
-          padding: 25px;
+          padding: 30px;
 
           .icone {
+            align-items: center;
+            display: flex;
+            font-size: 30px;
             height: 45px;
+            justify-content: center;
             width: 45px;
           }
         }
