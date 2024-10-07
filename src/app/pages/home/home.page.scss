@@ -39,8 +39,11 @@
         width: 46%;
 
         .item {
-          border: 1px solid #414141;
+          border: 2px solid #414141;
           border-radius: 20px;
+          box-shadow: 0 4px 8px rgba(65, 65, 65, 0.3);
+          cursor: pointer;
+          margin: 0 10px 10px 0;
           padding: 30px;
 
           .icone {
@@ -51,6 +54,20 @@
             justify-content: center;
             width: 45px;
           }
+
+          &:hover {
+            border-color: #f037b0;
+            box-shadow: 0 6px 12px rgba(240, 55, 176, 0.5);
+            transform: translateY(-5px);
+            transition: 0.5s ease;
+            z-index: 1;
+
+            .icone {
+              color: #f037b0;
+              transition: color 0.3s ease;
+            }
+          }
+
         }
       }
 
