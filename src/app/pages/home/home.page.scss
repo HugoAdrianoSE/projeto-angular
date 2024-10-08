@@ -29,6 +29,7 @@
 
   .sobre {
     .info {
+      align-items: center;
       display: flex;
       justify-content: space-between;
 
@@ -36,7 +37,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
-        width: 46%;
+        width: 50%;
 
         .item {
           border: 2px solid #414141;
@@ -71,7 +72,9 @@
       }
 
       .textos {
-        width: 46%;
+        line-height: 1.5;
+        text-align: center;
+        width: 50%;
       }
     }
   }
