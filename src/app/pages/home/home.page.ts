@@ -8,7 +8,7 @@ import { CardComponent } from '../../components/card/card.component';
   selector: 'app-home',
   standalone: true,
   templateUrl: './home.page.html',
-  styleUrl: './home.page.scss',
+  styleUrls: ['./home.page.scss'],
 
   imports: [
     CardComponent,

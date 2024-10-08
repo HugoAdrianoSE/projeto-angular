@@ -6,7 +6,7 @@ import Swiper from 'swiper';
   selector: 'app-card',
   standalone: true,
   templateUrl: './card.component.html',
-  styleUrl: './card.component.scss',
+  styleUrls: ['./card.component.scss'],
 
   imports: [
     CommonModule,

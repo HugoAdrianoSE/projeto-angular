@@ -8,7 +8,7 @@ import Swiper from 'swiper';
   selector: 'app-contato',
   standalone: true,
   templateUrl: './contato.page.html',
-  styleUrl: './contato.page.scss',
+  styleUrls: ['./contato.page.scss'],
 
   imports: [
     CommonModule,
